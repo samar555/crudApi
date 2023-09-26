@@ -19,7 +19,7 @@ public class User {
     @Column
     private String occupation;
     @Column
-    private String genter;
+    private String gender;
     public int getId() {
         return id;
     }
@@ -44,25 +44,25 @@ public class User {
     public void setOccupation(String occupation) {
         this.occupation = occupation;
     }
-    public String getGenter() {
-        return genter;
+    public String getGender() {
+        return gender;
     }
-    public void setGenter(String genter) {
-        this.genter = genter;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
-    public User(int id, String username, String lastname, String occupation, String genter) {
+    public User(int id, String username, String lastname, String occupation, String gender) {
         this.id = id;
         this.username = username;
         this.lastname = lastname;
         this.occupation = occupation;
-        this.genter = genter;
+        this.gender = gender;
     }
     public User() {
     }
     @Override
     public String toString() {
         return "User [id=" + id + ", username=" + username + ", lastname=" + lastname + ", occupation=" + occupation
-                + ", genter=" + genter + "]";
+                + ", genter=" + gender + "]";
     }
 
 
